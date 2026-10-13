@@ -14,7 +14,7 @@ app/
 ├── css/
 │   └── styles.css
 └── js/
-    ├── config.js
+    ├── config.example.js
     ├── api.js
     ├── ui.js
     ├── app-workouts.js
@@ -31,7 +31,7 @@ app/
 
 ## 4. Comunicación con la API
 
-- `config.js` contendrá `BASE_URL` y claves necesarias.
+- `config.example.js` es la plantilla pública; en local se copia a `config.js` (ignorado por git) con `BASE_URL` y claves.
 - `api.js` expone funciones genéricas: `getAll(table)`, `getById(table,id)`, `create(table,data)`, `update(table,id,data)`, `del(table,id)`.
 - Los módulos usan `api.js` para no duplicar lógica de fetch.
 

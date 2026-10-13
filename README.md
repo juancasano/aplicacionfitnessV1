@@ -45,7 +45,7 @@ aplicacionfitnessV1/
 │   │   ├── app-exercises.js
 │   │   ├── app-users.js
 │   │   ├── app-workouts.js
-│   │   ├── config.js
+│   │   ├── config.example.js
 │   │   └── ui.js
 │   ├── exercises.html
 │   ├── users.html
@@ -72,10 +72,11 @@ aplicacionfitnessV1/
 git clone https://github.com/juancasano/aplicacionfitnessV1.git
 ```
 
-2. Abre la carpeta en tu editor.
-3. Abre `app/exercises.html`, `app/users.html` o `app/workouts.html` en el navegador.
+2. Copia `app/js/config.example.js` a `app/js/config.js` y pon tu URL/clave de Supabase (ese archivo no se sube al repo).
+3. En las páginas HTML, cambia temporalmente `config.example.js` por `config.js` si quieres usar tus claves locales.
+4. Abre `app/exercises.html`, `app/users.html` o `app/workouts.html` en el navegador.
 
-> Esta aplicación es una demo estática que usa JavaScript puro y datos locales de ejemplo.
+> Esta aplicación es una demo estática que usa JavaScript puro. En GitHub Pages carga `config.example.js` (sin claves reales).
 
 ---
 
@@ -86,7 +87,7 @@ git clone https://github.com/juancasano/aplicacionfitnessV1.git
 - `app/workouts.html` — Gestión de entrenamientos.
 - `app/js/api.js` — Lógica de acceso a datos.
 - `app/js/ui.js` — Lógica de interfaz y eventos.
-- `app/js/config.js` — Configuración de la app, incluida la clave pública de Supabase.
+- `app/js/config.example.js` — Plantilla de configuración (copia a `config.js` en local).
 
 ---
 

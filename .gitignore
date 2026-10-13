@@ -6,6 +6,9 @@ desktop.ini
 # Editor folders and files
 .vscode/
 .idea/
+.cursor/
+.cursorignore
+AGENTS.md
 *.suo
 *.user
 *.userosscache
@@ -13,6 +16,9 @@ desktop.ini
 *.swp
 *.swo
 *~
+
+# Material de clase / local (no publicar)
+*.pdf
 
 # Log files
 *.log
@@ -31,7 +37,10 @@ out/
 
 tmp/
 temp/
+
+# Credenciales locales (usar config.example.js en el repo)
 app/js/config.js
+app/js/config.local.js
 
 # Python
 __pycache__/
