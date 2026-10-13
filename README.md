@@ -1,131 +1,34 @@
-# Aplicación Fitness V1 — Documentación modular
+# Aplicación Fitness V1 (archivo)
 
-Ejemplo didáctico de una app web CRUD modular para gestionar ejercicios, entrenamientos y usuarios.
-
-Este proyecto está diseñado como plantilla de documentación y código, con la API de la app separada de la documentación técnica.
-
----
-
-## Demo pública
-
-- [Ver la app de ejercicios](https://juancasano.github.io/aplicacionfitnessV1/app/exercises.html)
-- [Ver el repositorio en GitHub](https://github.com/juancasano/aplicacionfitnessV1)
+> **Proyecto archivado.** Era la primera demo en **HTML/CSS/JavaScript puro**.  
+> La versión actual para portafolio es **[aplicacionfitness-angular](https://github.com/juancasano/aplicacionfitness-angular)** (Angular + TypeScript, v1–v9).
 
 ---
 
-## Qué incluye este proyecto
+Ejemplo didáctico de una app web CRUD modular (ejercicios, entrenamientos y usuarios) con documentación separada del código.
 
-- `spec.md` — Especificación general de la aplicación.
-- `docs/database.md` — Modelo de datos y tablas.
-- `docs/architecture.md` — Arquitectura técnica y organización de carpetas.
-- `docs/modules/` — Documentación por módulo.
-- `app/` — Código HTML/CSS/JS de la aplicación.
-- `README.md` — Presentación del proyecto y guía de uso.
+## Demo (histórica)
 
----
+- [App de ejercicios (GitHub Pages)](https://juancasano.github.io/aplicacionfitnessV1/app/exercises.html)
+- [Versión actual en Angular](https://github.com/juancasano/aplicacionfitness-angular)
 
-## Estructura principal
+## Estructura
 
 ```
 aplicacionfitnessV1/
 ├── README.md
 ├── spec.md
-├── docs/
-│   ├── architecture.md
-│   ├── database.md
-│   └── modules/
-│       ├── exercises/
-│       ├── workouts/
-│       └── users/
-├── app/
-│   ├── css/
-│   │   └── styles.css
-│   ├── js/
-│   │   ├── api.js
-│   │   ├── app-exercises.js
-│   │   ├── app-users.js
-│   │   ├── app-workouts.js
-│   │   ├── config.example.js
-│   │   └── ui.js
-│   ├── exercises.html
-│   ├── users.html
-│   └── workouts.html
-├── data/
-│   ├── exercises_sample.csv
-│   ├── fitness_sample.csv
-│   ├── users_sample.csv
-│   ├── workout_exercises_sample.csv
-│   ├── workouts_sample.csv
-│   └── README.md
-└── sql/
-    ├── README.md
-    └── create_tables.sql
+├── docs/          # arquitectura, BD, módulos
+├── app/           # HTML/CSS/JS
+├── data/          # CSV de muestra
+└── sql/           # esquema de ejemplo
 ```
 
----
+## Uso local
 
-## Cómo usar
+1. Clona el repositorio.
+2. Copia `app/js/config.example.js` a `app/js/config.js` y pon tus claves de Supabase (no se versiona).
+3. En las páginas HTML, cambia `config.example.js` por `config.js` si usas claves locales.
+4. Abre `app/exercises.html`, `app/users.html` o `app/workouts.html`.
 
-1. Clona el repositorio:
-
-```bash
-git clone https://github.com/juancasano/aplicacionfitnessV1.git
-```
-
-2. Copia `app/js/config.example.js` a `app/js/config.js` y pon tu URL/clave de Supabase (ese archivo no se sube al repo).
-3. En las páginas HTML, cambia temporalmente `config.example.js` por `config.js` si quieres usar tus claves locales.
-4. Abre `app/exercises.html`, `app/users.html` o `app/workouts.html` en el navegador.
-
-> Esta aplicación es una demo estática que usa JavaScript puro. En GitHub Pages carga `config.example.js` (sin claves reales).
-
----
-
-## Qué puedes encontrar
-
-- `app/exercises.html` — Gestión de ejercicios.
-- `app/users.html` — Gestión de usuarios.
-- `app/workouts.html` — Gestión de entrenamientos.
-- `app/js/api.js` — Lógica de acceso a datos.
-- `app/js/ui.js` — Lógica de interfaz y eventos.
-- `app/js/config.example.js` — Plantilla de configuración (copia a `config.js` en local).
-
----
-
-## Documentación técnica
-
-- `docs/architecture.md` describe la organización de carpetas y la arquitectura del proyecto.
-- `docs/database.md` explica la estructura de datos y las tablas.
-- `docs/modules/` contiene las especificaciones y detalles de implementación de cada módulo:
-  - `exercises`
-  - `workouts`
-  - `users`
-
----
-
-## Buenas prácticas incluidas
-
-- Documentación separada de la implementación.
-- Estructura modular por funcionalidad.
-- Uso de archivos CSV de muestra para datos.
-- Publicación en GitHub Pages.
-- Archivo `.nojekyll` para evitar procesado Jekyll al publicar.
-
----
-
-## Estado del proyecto
-
-- [x] Código base del front-end.
-- [x] Documentación modular.
-- [x] Demo en GitHub Pages.
-- [ ] Mejoras y versiones futuras: validaciones, diseño, módulo de clientes.
-
----
-
-## Enlaces rápidos
-
-- App: https://juancasano.github.io/aplicacionfitnessV1/app/exercises.html
-- Repo: https://github.com/juancasano/aplicacionfitnessV1
-
----
-
-
+> En GitHub Pages carga `config.example.js` (sin claves reales).
